@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://app.magrocket.com/';
+$config['base_url']	= 'http://APP.YOURSERVER.COM/';
 
 /*
 |--------------------------------------------------------------------------

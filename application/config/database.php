@@ -49,9 +49,9 @@ $active_group = 'default';
 $active_record = TRUE;
 
 $db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'mag1_saprod';
-$db['default']['password'] = 'selmer_76';
-$db['default']['database'] = 'mag1_magrocketprod';
+$db['default']['username'] = 'DBUSERNAME';
+$db['default']['password'] = 'DBPASSWORD';
+$db['default']['database'] = 'DBNAME';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
