@@ -14,6 +14,9 @@
 
     <script src="<?php echo base_url(); ?>assets/magrocket/lib/jquery-1.7.2.min.js" type="text/javascript"></script>
 
+ 	 <!-- bootbox code -->
+	 <script type="text/javascript" src="<?php echo base_url(); ?>assets/magrocket/lib/bootbox.min.js"></script>
+
     <!-- Demo page code -->
 
     <style type="text/css">
@@ -59,24 +62,61 @@
         <div class="navbar-inner">
                 <ul class="nav pull-right"> 
                     <li id="fat-menu" class="dropdown">
-                        <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">
-                            <i class="icon-user"></i><?php 
-											$user = $this->ion_auth->user()->row();
-											echo $user->first_name;
-									   ?>
-                            <i class="icon-caret-down"></i>
-                        </a>
-
-                        <ul class="dropdown-menu">
-                            <li><a tabindex="-1" href="/account">My Account</a></li>
-                            <li class="divider"></li>
-                            <li><a tabindex="-1" class="visible-phone" href="#">Settings</a></li>
-                            <li class="divider visible-phone"></li>
-                            <li><a tabindex="-1" href="/auth/logout">Logout</a></li>
-                        </ul>
                     </li>
                     
                 </ul>
                 <a href="/"><img src="<?php echo base_url(); ?>assets/magrocket/images/logo.png" width="168" height="40"></a>
         </div>
     </div>
+
+
+    <div class="sidebar-nav">
+        <form class="search form-inline">
+            <input type="text" placeholder="Search...">
+        </form> 	  
+    </div>
+  
+	<!-- Begin Main Content -->
+    <div class="content">
+        
+		<div class="header">
+		 	<h1 class="page-title">Test</h1>
+		</div>
+		        
+      <ul class="breadcrumb">
+         <li><a href="/">Home</a> <span class="divider">/</span></li>
+         <li class="active">Test</li>
+      </ul>
+		
+		<div class="container-fluid">
+		<div class="row-fluid">
+			<div class="row-fluid">
+			    <div class="alert alert-info">
+			        <button type="button" class="close" data-dismiss="alert">×</button>
+			        <strong>Welcome to MagRocket!</strong>
+			    </div>
+			    You are here.
+			</div>
+
+	<!-- End Main Content -->
+
+                    <footer>
+                        <hr>
+                        <p>&copy; 2013 <a href="http://www.magrocket.com" target="_blank">MagRocket</a> by <a href="http://www.nin9creative.com" target="_blank">NIN9 Creative</a></p>
+                    </footer>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <script src="<?php echo base_url(); ?>assets/magrocket/lib/bootstrap/js/bootstrap.js"></script>
+    <script type="text/javascript">
+        $("[rel=tooltip]").tooltip();
+        $(function() {
+            $('.demo-cancel-click').click(function(){return false;});
+        });
+    </script>
+    
+  </body>
+</html>
