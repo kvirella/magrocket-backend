@@ -93,9 +93,9 @@
 			<div class="row-fluid">
 			    <div class="alert alert-info">
 			        <button type="button" class="close" data-dismiss="alert">×</button>
-			        <strong>Welcome to MagRocket!</strong>
+			        <strong>If you got this far, the Framework seems to be installed correctly.</strong>
 			    </div>
-			    You are here.
+			    
 			</div>
 
 	<!-- End Main Content -->
