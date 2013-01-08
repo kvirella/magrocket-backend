@@ -95,7 +95,9 @@
 			        <button type="button" class="close" data-dismiss="alert">×</button>
 			        <strong>If you got this far, the Framework seems to be installed correctly.</strong>
 			    </div>
+			    <div>
 			    <?php phpinfo();?>
+			    </div>
 			</div>
 
 	<!-- End Main Content -->
