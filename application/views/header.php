@@ -13,12 +13,15 @@
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/magrocket/lib/font-awesome/css/font-awesome.css">
 
     <script src="<?php echo base_url(); ?>assets/magrocket/lib/jquery-1.7.2.min.js" type="text/javascript"></script>
+    <script src="<?php echo base_url(); ?>assets/magrocket/lib/jqBootstrapValidation.js"></script>
+    <script>
+	    $(function () { $("input,select,textarea").not("[type=submit]").jqBootstrapValidation(); } );
+  	</script>
+    
+ 	<!-- bootbox code -->
+	<script type="text/javascript" src="<?php echo base_url(); ?>assets/magrocket/lib/bootbox.min.js"></script>
 
- 	 <!-- bootbox code -->
-	 <script type="text/javascript" src="<?php echo base_url(); ?>assets/magrocket/lib/bootbox.min.js"></script>
-
-    <!-- Demo page code -->
-
+    <!-- Page code -->
     <style type="text/css">
         #line-chart {
             height:300px;
@@ -65,8 +68,7 @@
                         <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">
                             <i class="icon-user"></i><?php 
 											$user = $this->ion_auth->user()->row();
-											echo $user->first_name;
-									   ?>
+											echo $user->first_name;?>
                             <i class="icon-caret-down"></i>
                         </a>
 

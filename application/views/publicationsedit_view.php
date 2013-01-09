@@ -28,16 +28,16 @@
 								<input type="hidden" name="UUID" id="UUID" value="<?php echo $publicationData['UUID']?>"></input>
 
 								<label>Publication Name</label>
-								<input type="text" class="input-xlarge" title="Enter your publication name." value="<?php echo $publicationData['NAME']?>" id="NAME" name="NAME">
+								<input type="text" required class="input-xlarge" title="Enter your publication name." value="<?php echo $publicationData['NAME']?>" id="NAME" name="NAME">
 
 								<label>Publication ID</label>
-								<input type="text" class="input-xlarge" value="<?php echo $publicationData['UUID']?>" class="input-xlarge">
+								<input type="text" class="input-xxlarge" value="<?php echo $publicationData['UUID']?>" class="input-xlarge">
 								
 								<label>Parse Application ID</label>
-								<input type="text" class="input-xlarge" title="Enter the Parse Application ID." value="<?php echo $publicationData['PARSE_APPLICATION_ID']?>" id="PARSE_APPLICATION_ID" name="PARSE_APPLICATION_ID">
+								<input type="text" class="input-xxlarge" title="Enter the Parse Application ID." value="<?php echo $publicationData['PARSE_APPLICATION_ID']?>" id="PARSE_APPLICATION_ID" name="PARSE_APPLICATION_ID">
 
 								<label>Parse Rest Api Key</label>
-   							<input type="text" class="input-xlarge" title="Enter the Parse Rest Api Key." value="<?php echo $publicationData['PARSE_REST_API_KEY']?>" id="PARSE_REST_API_KEY" name="PARSE_REST_API_KEY">
+   							<input type="text" class="input-xxlarge" title="Enter the Parse Rest Api Key." value="<?php echo $publicationData['PARSE_REST_API_KEY']?>" id="PARSE_REST_API_KEY" name="PARSE_REST_API_KEY">
 								
 									<div class="btn-toolbar">
 									    <button class="btn btn-primary"><i class="icon-save" name="submitbutton"></i> Save</button>
