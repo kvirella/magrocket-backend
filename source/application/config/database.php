@@ -48,10 +48,10 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] = 'localhost'; // for pdo: mysql:host=localhost
-$db['default']['username'] = 'mag1_install';
-$db['default']['password'] = 'magrocket';
-$db['default']['database'] = 'mag1_magrocketinstall';
+$db['default']['hostname'] = 'localhost'; 				// for pdo: mysql:host=localhost
+$db['default']['username'] = 'mag1_install';			// DB Username
+$db['default']['password'] = 'magrocket';				// DB Username Password
+$db['default']['database'] = 'mag1_magrocketinstall';	// DB Name
 $db['default']['dbdriver'] = 'mysqli';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
