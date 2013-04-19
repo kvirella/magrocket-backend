@@ -1,0 +1,47 @@
+-- phpMyAdmin SQL Dump
+-- version 3.5.5
+-- http://www.phpmyadmin.net
+--
+-- Host: localhost
+-- Generation Time: Apr 18, 2013 at 04:01 PM
+-- Server version: 5.5.30-cll
+-- PHP Version: 5.3.17
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+
+--
+-- Database: `mag1_magrocketdev2`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `SUBSCRIPTIONS`
+--
+
+CREATE TABLE IF NOT EXISTS `SUBSCRIPTIONS` (
+  `APP_ID` varchar(255) NOT NULL,
+  `USER_ID` varchar(255) NOT NULL,
+  `EFFECTIVE_DATE` datetime NOT NULL,
+  `EXPIRATION_DATE` datetime NOT NULL,
+  `LAST_VALIDATED` datetime NOT NULL,
+  PRIMARY KEY (`APP_ID`(75),`USER_ID`(50))
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `SUBSCRIPTIONS`
+--
+
+INSERT INTO `SUBSCRIPTIONS` (`APP_ID`, `USER_ID`, `EFFECTIVE_DATE`, `EXPIRATION_DATE`, `LAST_VALIDATED`) VALUES
+('com.nin9creative.magrocket', 'B7340733-CC87-420B-888A-EA24776E276A', '2013-04-07 20:07:21', '2014-04-07 20:37:21', '2013-04-17 09:30:12');
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
