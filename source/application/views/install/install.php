@@ -11,11 +11,11 @@
         <center><h3>MagRocket Administration Console Installation</h3></center>
         <p>Welcome to MagRocket!</p>
         <p>The MagRocket Administration Console is one of two server side components required to support In-App Purchases and Paid Subscriptions for the Baker iOS Newsstand framework.  In addition to the HTML/PHP administration backend, the REST API service layer must also be installed so that the Baker iOS application can "talk" to the server side backend.  Please follow the directions for installing both components.  If you are having issues, please head over to the <a href="http://www.github.com/nin9creative/magrocket-backend" target="_blank">GitHub Repository</a> for help.</p>
-        <h4>Config Folder</h4>
-        <p>The config folder must be writable, please check before continuing.</p>
+        <h4>Config/Database Folder</h4>
+        <p>The config/database folder must be writable, please check before continuing.</p>
         <table>
             <tr>
-                <td>Folder config: &nbsp; </td>
+                <td>Database folder: &nbsp; </td>
                 <td><strong><?php echo __DATABASE_CONFIG_PATH__; ?></strong></td>
             </tr>
         </table>
