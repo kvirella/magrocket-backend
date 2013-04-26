@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Apr 18, 2013 at 04:01 PM
+-- Generation Time: Apr 25, 2013 at 11:02 PM
 -- Server version: 5.5.30-cll
 -- PHP Version: 5.3.17
 
@@ -17,7 +17,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Database: `mag1_magrocketdev2`
+-- Database: `mag1_magrocketinstall`
 --
 
 -- --------------------------------------------------------
@@ -40,7 +40,7 @@ CREATE TABLE IF NOT EXISTS `SUBSCRIPTIONS` (
 --
 
 INSERT INTO `SUBSCRIPTIONS` (`APP_ID`, `USER_ID`, `EFFECTIVE_DATE`, `EXPIRATION_DATE`, `LAST_VALIDATED`) VALUES
-('com.nin9creative.magrocket', 'B7340733-CC87-420B-888A-EA24776E276A', '2013-04-07 20:07:21', '2014-04-07 20:37:21', '2013-04-17 09:30:12');
+('com.nin9creative.magrocket', 'D5DBF605-995F-4D66-8393-45D1017D12B9', '2013-04-25 19:16:53', '2013-04-25 19:46:53', '2013-04-25 19:16:58');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

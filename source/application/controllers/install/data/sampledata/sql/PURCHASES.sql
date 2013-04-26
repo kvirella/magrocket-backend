@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Apr 18, 2013 at 04:01 PM
+-- Generation Time: Apr 25, 2013 at 11:01 PM
 -- Server version: 5.5.30-cll
 -- PHP Version: 5.3.17
 
@@ -17,7 +17,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Database: `mag1_magrocketdev2`
+-- Database: `mag1_magrocketinstall`
 --
 
 -- --------------------------------------------------------
@@ -38,13 +38,12 @@ CREATE TABLE IF NOT EXISTS `PURCHASES` (
 --
 
 INSERT INTO `PURCHASES` (`APP_ID`, `USER_ID`, `PRODUCT_ID`) VALUES
-('com.nin9creative.magrocket', 'B7340733-CC87-420B-888A-EA24776E276A', 'com.nin9creative.magrocket.issues.march2013'),
-('com.nin9creative.magrocket', 'B7340733-CC87-420B-888A-EA24776E276A', 'com.nin9creative.magrocket.issues.february2013'),
-('com.nin9creative.magrocket', 'B7340733-CC87-420B-888A-EA24776E276A', 'com.nin9creative.magrocket.issues.january2013'),
-('com.nin9creative.magrocket', 'B7340733-CC87-420B-888A-EA24776E276A', 'com.nin9creative.magrocket.issues.april2013'),
-('com.nin9creative.magrocket', 'B7340733-CC87-420B-888A-EA24776E276A', 'com.nin9creative.magrocket.issues.may2013'),
-('com.nin9creative.magrocket', 'B7340733-CC87-420B-888A-EA24776E276A', 'com.nin9creative.magrocket.issues.june2013'),
-('com.nin9creative.magrocket', 'B7340733-CC87-420B-888A-EA24776E276A', 'com.nin9creative.magrocket.issues.july2013');
+('com.nin9creative.magrocket', 'D5DBF605-995F-4D66-8393-45D1017D12B9', 'com.nin9creative.magrocket.issues.july2013'),
+('com.nin9creative.magrocket', 'D5DBF605-995F-4D66-8393-45D1017D12B9', 'com.nin9creative.magrocket.issues.may2013'),
+('com.nin9creative.magrocket', 'D5DBF605-995F-4D66-8393-45D1017D12B9', 'com.nin9creative.magrocket.issues.march2013'),
+('com.nin9creative.magrocket', 'D5DBF605-995F-4D66-8393-45D1017D12B9', 'com.nin9creative.magrocket.issues.january2013'),
+('com.nin9creative.magrocket', 'D5DBF605-995F-4D66-8393-45D1017D12B9', 'com.nin9creative.magrocket.issues.june2013'),
+('com.nin9creative.magrocket', 'D5DBF605-995F-4D66-8393-45D1017D12B9', 'com.nin9creative.magrocket.issues.april2013');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

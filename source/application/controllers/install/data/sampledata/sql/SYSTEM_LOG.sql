@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Apr 18, 2013 at 04:01 PM
+-- Generation Time: Apr 25, 2013 at 11:02 PM
 -- Server version: 5.5.30-cll
 -- PHP Version: 5.3.17
 
@@ -17,7 +17,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Database: `mag1_magrocketdev2`
+-- Database: `mag1_magrocketinstall`
 --
 
 -- --------------------------------------------------------
@@ -28,11 +28,21 @@ SET time_zone = "+00:00";
 
 CREATE TABLE IF NOT EXISTS `SYSTEM_LOG` (
   `ID` int(11) NOT NULL AUTO_INCREMENT,
-  `TYPE` int(11) DEFAULT NULL,
+  `TYPE` varchar(25) DEFAULT NULL,
   `MESSAGE` text,
   `TIMESTAMP` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`ID`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=854 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1320 ;
+
+--
+-- Dumping data for table `SYSTEM_LOG`
+--
+
+INSERT INTO `SYSTEM_LOG` (`ID`, `TYPE`, `MESSAGE`, `TIMESTAMP`) VALUES
+(1319, 'Info', 'Time since last validating receipt for APP ID: com.nin9creative.magrocket USER ID: D5DBF605-995F-4D66-8393-45D1017D12B9 = 0 hours 21 minutes', '2013-04-26 02:38:37'),
+(1318, 'Info', 'Checking subscription for APP ID: com.nin9creative.magrocket USER ID: D5DBF605-995F-4D66-8393-45D1017D12B9', '2013-04-26 02:38:37'),
+(1316, 'Info', 'Retrieving Issues for APP ID: com.nin9creative.magrocket USER ID: D5DBF605-995F-4D66-8393-45D1017D12B9', '2013-04-26 02:38:37'),
+(1317, 'Info', 'Checking purchases for APP ID: com.nin9creative.magrocket USER ID: D5DBF605-995F-4D66-8393-45D1017D12B9', '2013-04-26 02:38:37');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
