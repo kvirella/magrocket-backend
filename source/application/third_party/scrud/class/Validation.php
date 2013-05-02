@@ -56,7 +56,8 @@ class Validation {
         if (empty($this->check) && $this->check != '0') {
             return false;
         }
-        $this->regex = '/^[\p{Ll}\p{Lm}\p{Lo}\p{Lt}\p{Lu}\p{Nd}]+$/mu';
+        //$this->regex = '/^[\p{Ll}\p{Lm}\p{Lo}\p{Lt}\p{Lu}\p{Nd}]+$/mu';
+        $this->regex = '/^[A-Za-z0-9-_]*$/';
         return $this->check();
     }
 
