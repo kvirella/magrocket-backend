@@ -8,7 +8,7 @@ MagRocket
 WHAT IS MAGROCKET
 -----------------
 
-Based in part on the popular Baker Framework, MagRocket is an Open Source server side backend that extends the basic functionality of the framework with additions such as a full web based administration interface with database backend, automatic subscription management and tracking, REST API, push notifications, Google based app analytics and more!
+Based in part on the popular Baker Framework, MagRocket is an open source server side backend that extends the basic functionality of the framework with additions such as a full web based administration interface with database backend, automatic subscription management and tracking, REST API, push notifications, Google based app analytics and more!
 
 LICENSE
 -------
