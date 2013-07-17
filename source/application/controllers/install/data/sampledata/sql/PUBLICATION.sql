@@ -1,10 +1,10 @@
 -- phpMyAdmin SQL Dump
--- version 3.5.5
+-- version 3.5.8
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: May 22, 2013 at 09:49 PM
--- Server version: 5.5.30-cll
+-- Generation Time: Jul 16, 2013 at 10:23 PM
+-- Server version: 5.5.32-cll
 -- PHP Version: 5.3.17
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
@@ -17,7 +17,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Database: `mag1_magrocketinstall`
+-- Database: `mag1_magrocketmain`
 --
 
 -- --------------------------------------------------------
@@ -30,6 +30,7 @@ CREATE TABLE IF NOT EXISTS `PUBLICATION` (
   `ID` int(10) NOT NULL AUTO_INCREMENT,
   `APP_ID` varchar(255) DEFAULT NULL,
   `NAME` varchar(100) DEFAULT NULL,
+  `SUBSCRIPTION_BEHAVIOR` enum('all','term') NOT NULL DEFAULT 'term',
   `DEVELOPMENT_MODE` varchar(5) DEFAULT NULL,
   `ISSUE_DOWNLOAD_SECURITY` varchar(5) DEFAULT NULL,
   `ITUNES_REVALIDATION_DURATION` int(11) NOT NULL DEFAULT '12',
@@ -43,8 +44,8 @@ CREATE TABLE IF NOT EXISTS `PUBLICATION` (
 -- Dumping data for table `PUBLICATION`
 --
 
-INSERT INTO `PUBLICATION` (`ID`, `APP_ID`, `NAME`, `DEVELOPMENT_MODE`, `ISSUE_DOWNLOAD_SECURITY`, `ITUNES_REVALIDATION_DURATION`, `ITUNES_PRODUCTION_LEVEL`, `ITUNES_SHARED_SECRET`, `ITUNES_UPDATED`) VALUES
-(6, 'com.nin9creative.magrocket', 'MagRocket Sample', 'TRUE', 'TRUE', 12, 'sandbox', '27b3b6fe881f4e8b89251a4a4f79b758', '2013-05-22 21:32:50');
+INSERT INTO `PUBLICATION` (`ID`, `APP_ID`, `NAME`, `SUBSCRIPTION_BEHAVIOR`, `DEVELOPMENT_MODE`, `ISSUE_DOWNLOAD_SECURITY`, `ITUNES_REVALIDATION_DURATION`, `ITUNES_PRODUCTION_LEVEL`, `ITUNES_SHARED_SECRET`, `ITUNES_UPDATED`) VALUES
+(6, 'com.nin9creative.magrocket', 'MagRocket Sample', 'term', 'TRUE', 'TRUE', 1, 'sandbox', '27b3b6fe881f4e8b89251a4a4f79b758', '2013-05-22 21:32:50');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
