@@ -15,31 +15,64 @@ class Analytics extends Admin_Controller {
 		    <thead>
 		    <tr>
 		    <th>Name</th>
-		    <th>Issue Purchases</th>
-		    <th>Subscription Purchases</th>
+		    <th>Free Subscriptions</th>
+		    <th>Paid Subscription Purchases</th>
+		    <th>Paid Issue Purchases</th>
 		    <th>Issue Downloads</th>
 		    <th>API Interactions</th>
 		    </tr>
 		    </thead>
 		    <tbody>";
 
-		  //Get list of publications
-		  
-			  //Loop through publications and gather statistics
-			  $issue_purchases = 4;
-			  $subscription_purchases = 15;
-			  $issue_downloads = 500;
-			  $api_interactions = 29888;		  
-			  
-			  //Build Table Row		  
-			  
-			  $table_view_body = "<tr>
-			    <td>MagRocket Magazine</td>   
-			    <td><div class='pagination-centered'>" . $issue_purchases . "</div></td>   
-			    <td><div class='pagination-centered'>" . $subscription_purchases . "</div></td>  
-			    <td><div class='pagination-centered'>" . $issue_downloads . "</div></td>
-			    <td><div class='pagination-centered'>" . $api_interactions . "</div></td>
-			    </tr>";
+		    $table_view_body = "";
+		    
+		    //Get list of publications
+		    $query = $this->db->query("SELECT * FROM PUBLICATION");
+
+			if ($query->num_rows() > 0)
+			{
+			   foreach ($query->result() as $row)
+			   {			      
+				  //Loop through publications and gather statistics
+				  $issue_purchases = "SELECT COUNT(*) FROM RECEIPTS WHERE APP_ID = '" . $row->APP_ID . "' AND TYPE = 'issue'";
+				  $queryStats = $this->db->query($issue_purchases);
+				  $resultStats = $queryStats->row_array();
+				  $issue_purchases_value = $resultStats['COUNT(*)'];
+				  
+				  $subscription_purchases = "SELECT COUNT(*) FROM RECEIPTS WHERE APP_ID = '" . $row->APP_ID . "' AND TYPE = 'auto-renewable-subscription'";
+				  $queryStats = $this->db->query($subscription_purchases);
+				  $resultStats = $queryStats->row_array();
+				  $subscription_purchases_value = $resultStats['COUNT(*)'];
+				  
+				  $free_subscriptions = "SELECT COUNT(*) FROM RECEIPTS WHERE APP_ID = '" . $row->APP_ID . "' AND TYPE = 'free-subscription'";
+				  $queryStats = $this->db->query($free_subscriptions);
+				  $resultStats = $queryStats->row_array();
+				  $free_subscriptions_value = $resultStats['COUNT(*)'];
+				  
+				  $issue_downloads = "SELECT COUNT(*) FROM ANALYTICS WHERE APP_ID = '" . $row->APP_ID . "' AND TYPE = 'download'";
+				  $queryStats = $this->db->query($issue_downloads);
+				  $resultStats = $queryStats->row_array();
+				  $issue_downloads_value = $resultStats['COUNT(*)'];
+				  
+				  $api_interactions = "SELECT COUNT(*) FROM ANALYTICS WHERE APP_ID = '" . $row->APP_ID . "' AND TYPE = 'api_interaction'";
+				  $queryStats = $this->db->query($api_interactions);
+				  $resultStats = $queryStats->row_array();
+				  $api_interactions_value = $resultStats['COUNT(*)'];
+				  		  
+				  
+				  //Build Table Row		  
+				  
+				  $table_view_body .= "<tr>
+				    <td>" . $row->NAME . "</td>  
+				    <td>" . $free_subscriptions_value . "</td>  				    
+				    <td>" . $subscription_purchases_value . "</td>  
+				    <td>" . $issue_purchases_value . "</td>   
+				    <td>" . $issue_downloads_value . "</td>
+				    <td>" . $api_interactions_value . "</td>
+				    </tr>";
+			   }
+			} 
+
 		  
 		  $table_view_footer = "</tbody></table>";
 		  

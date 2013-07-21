@@ -7,8 +7,16 @@
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <link rel="shortcut icon" href="<?php echo base_url(); ?>media/images/favicon.ico">
-        <link href="<?php echo base_url(); ?>media/css/template.css" rel="stylesheet">
+        <!-- <link href="<?php echo base_url(); ?>media/css/template.css" rel="stylesheet">-->
+        
+        
+        <link href="<?php echo base_url(); ?>media/bounce-theme/css/bootstrap.min.css" rel="stylesheet">
+		<link href="<?php echo base_url(); ?>media/bounce-theme/css/bootstrap-responsive.min.css" rel="stylesheet">
+		<link href="<?php echo base_url(); ?>media/bounce-theme/css/glyphicons.css" rel="stylesheet">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+	    <link href="<?php echo base_url(); ?>media/bounce-theme/css/base.css" rel="stylesheet">
+		<link href="<?php echo base_url(); ?>media/bounce-theme/css/blue.css" rel="stylesheet">
+        
         <link href="<?php echo base_url(); ?>media/jquery/ui/css/smoothness/jquery-ui-1.9.1.custom.min.css" rel="stylesheet">
         <link href="<?php echo base_url(); ?>media/css/style.css" rel="stylesheet">
         <link href="<?php echo base_url(); ?>media/select2/select2.css" rel="stylesheet">
@@ -44,6 +52,14 @@
 		border: 1px solid #DDDDDD;
 		border-radius: 5px;
 		background: #FBFBFB;
+	}
+	
+	#header{
+		padding: 8px 0;
+		margin-bottom:10px;
+	}
+	.affix .container{
+		background: none repeat scroll 0 0 #F1F1F1;
 	}
 	
 </style>

@@ -7,9 +7,16 @@
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <!-- Le styles -->
-        <link rel="shortcut icon" href="<?php echo base_url(); ?>media/images/favicon.ico">
-        <link href="<?php echo base_url(); ?>media/css/template.css" rel="stylesheet">
+        <!-- Le styles 
+        <link href="<?php echo base_url(); ?>media/css/template.css" rel="stylesheet">-->
+        
+        <link href="<?php echo base_url(); ?>media/bounce-theme/css/bootstrap.min.css" rel="stylesheet">
+		<link href="<?php echo base_url(); ?>media/bounce-theme/css/bootstrap-responsive.min.css" rel="stylesheet">
+		<link href="<?php echo base_url(); ?>media/bounce-theme/css/glyphicons.css" rel="stylesheet">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+	    <link href="<?php echo base_url(); ?>media/bounce-theme/css/base.css" rel="stylesheet">
+		<link href="<?php echo base_url(); ?>media/bounce-theme/css/blue.css" rel="stylesheet">
+        
         <link href="<?php echo base_url(); ?>media/bootstrap-modal/css/animate.min.css" rel="stylesheet">
         <link href="<?php echo base_url(); ?>media/datepicker/css/datepicker.css" rel="stylesheet">
         <link href="<?php echo base_url(); ?>media/datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
@@ -46,6 +53,13 @@
             .list thead tr th .asc {
                 background: url("<?php echo base_url(); ?>media/icons/arrow_up_black.png") no-repeat right center;
             }
+           #header{
+				padding: 8px 0;
+				margin-bottom:10px;
+			}
+			.affix .container{
+				background: none repeat scroll 0 0 #F1F1F1;
+			}
         </style>
 
     </head>
