@@ -6,7 +6,7 @@
                     class="icon-bar"></span> </a> <a class="brand" href="<?php echo base_url(); ?>index.php/admin/home"><?php echo $this->lang->line('__LBL_PROJECT_NAME__'); ?></a>
             <div class="nav-collapse collapse">
                 <ul class="nav">
-                    <li <?php if ($type == 'dashboard') { ?>class="active"<?php } ?>><a href="<?php echo base_url(); ?>index.php/admin/home"><?php echo $this->lang->line('__LBL_MAIN__'); ?></a></li>
+                    <li <?php if ($type == 'dashboard') { ?>class="active"<?php } ?>><a href="<?php echo base_url(); ?>index.php/admin/home"><?php echo $this->lang->line('__LBL_MAIN__'); ?></a></li>                   
                     <?php if ((int) $crudAuth['group']['group_manage_flag'] != 0 || 
                     		(int) $crudAuth['user_manage_flag'] != 0) { ?>
                         <li class="dropdown <?php if ($type == 'user') { ?>active<?php } ?>">
@@ -35,13 +35,22 @@
                         <ul class="dropdown-menu">
                             <li class="nav-header"><?php echo $this->lang->line('__LBL_BROWSE_TABLE__'); ?></li>
                             <li  >
-                                <a  href="<?php echo base_url(); ?>index.php/admin/scrud/browse?table=PUBLICATION" >Publication</a>
+                                <a  href="<?php echo base_url(); ?>index.php/admin/scrud/browse?table=PUBLICATION" ><?php echo $this->lang->line('__LBL_PUBLICATION__'); ?></a>
                             </li>
                             <li  >
-                                <a  href="<?php echo base_url(); ?>index.php/admin/scrud/browse?table=ISSUES" >Issues</a>
+                                <a  href="<?php echo base_url(); ?>index.php/admin/scrud/browse?table=ISSUES" ><?php echo $this->lang->line('__LBL_ISSUES__'); ?></a>
                             </li>
                         </ul>
-                    </li>   
+                    </li>
+						  <!-- MAGROCKET - HARDCODING THE LIST OF AVAILABLE OPTIONS FOR THE USER MENU -->
+                    <li class="dropdown <?php if ($type == 'tools') { ?>active<?php } ?>">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#"><?php echo $this->lang->line('__LBL_TOOLS__'); ?> <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li  >
+                                <a  href="<?php echo base_url(); ?>index.php/admin/analytics" ><?php echo $this->lang->line('__LBL_ANALYTICS__'); ?></a>
+                            </li>
+                        </ul>
+                    </li>                          
                     <?php if ($crudAuth['group']['group_name'] != 'Users') { ?>          
                     	<!-- MAGROCKET - HARDCODING THE LIST OF AVAILABLE OPTIONS FOR THE USER MENU -->
 	                    <li class="dropdown  <?php if ($type == 'browse' && ($_SERVER['QUERY_STRING']=='table=PURCHASES' || $_SERVER['QUERY_STRING']=='table=RECEIPTS' || $_SERVER['QUERY_STRING']=='table=SUBSCRIPTIONS' || $_SERVER['QUERY_STRING']=='table=APNS_TOKENS' || $_SERVER['QUERY_STRING']=='table=SYSTEM_LOG')) { ?>active<?php } ?>"  id="mnu_browse" style="display:none;">
@@ -49,19 +58,19 @@
 	                        <ul class="dropdown-menu">
 	                            <li class="nav-header"><?php echo $this->lang->line('__LBL_BROWSE_TABLE__'); ?></li>
 	                            <li  >
-	                                <a  href="<?php echo base_url(); ?>index.php/admin/scrud/browse?table=PURCHASES" >Purchases</a>
+	                                <a  href="<?php echo base_url(); ?>index.php/admin/scrud/browse?table=PURCHASES" ><?php echo $this->lang->line('__LBL_PURCHASES__'); ?></a>
 	                            </li>
 	                            <li  >
-	                                <a  href="<?php echo base_url(); ?>index.php/admin/scrud/browse?table=RECEIPTS" >Receipts</a>
+	                                <a  href="<?php echo base_url(); ?>index.php/admin/scrud/browse?table=RECEIPTS" ><?php echo $this->lang->line('__LBL_RECEIPTS__'); ?></a>
 	                            </li>
 	                            <li  >
-	                                <a  href="<?php echo base_url(); ?>index.php/admin/scrud/browse?table=SUBSCRIPTIONS" >Subscriptions</a>
+	                                <a  href="<?php echo base_url(); ?>index.php/admin/scrud/browse?table=SUBSCRIPTIONS" ><?php echo $this->lang->line('__LBL_SUBSCRIPTIONS__'); ?></a>
 	                            </li>
 	                            <li  >
-	                                <a  href="<?php echo base_url(); ?>index.php/admin/scrud/browse?table=APNS_TOKENS" >APNS Tokens</a>
+	                                <a  href="<?php echo base_url(); ?>index.php/admin/scrud/browse?table=APNS_TOKENS" ><?php echo $this->lang->line('__LBL_APNS_TOKENS__'); ?></a>
 	                            </li>
 	                            <li  >
-	                                <a  href="<?php echo base_url(); ?>index.php/admin/scrud/browse?table=SYSTEM_LOG" >System Log</a>
+	                                <a  href="<?php echo base_url(); ?>index.php/admin/scrud/browse?table=SYSTEM_LOG" ><?php echo $this->lang->line('__LBL_SYSTEM_LOG__'); ?></a>
 	                            </li>
 	                        </ul>
 	                    </li>

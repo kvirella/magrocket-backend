@@ -160,16 +160,16 @@ class Index extends CI_Controller {
             $dump = new phpMyImporter($this->db->database, $connection, $filename, $compress);
             $dump->utf8 = true;
             $dump->doImport();
-            ob_get_clean();               
-            
+            ob_get_clean();                             
+             
             ob_start();
             $filename = dirname(__FILE__) . '/data/sampledata/sql/ANALYTICS.sql';
             $compress = false;
             $dump = new phpMyImporter($this->db->database, $connection, $filename, $compress);
             $dump->utf8 = true;
             $dump->doImport();
-            ob_get_clean();                    
-             
+            ob_get_clean(); 
+                         
             $oldumask = umask(0);
             recurse_copy(dirname(__FILE__) . '/data/sampledata/config', __DATABASE_CONFIG_PATH__ . '/' . $this->db->database);
             umask($oldumask);

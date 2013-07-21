@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Jul 18, 2013 at 11:47 PM
+-- Generation Time: Jul 20, 2013 at 09:00 PM
 -- Server version: 5.5.32-cll
 -- PHP Version: 5.3.17
 
@@ -36,6 +36,15 @@ CREATE TABLE IF NOT EXISTS `ANALYTICS` (
   `TIMESTAMP` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`ID`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
+
+--
+-- Dumping data for table `ANALYTICS`
+--
+
+INSERT INTO `ANALYTICS` (`ID`, `APP_ID`, `USER_ID`, `TYPE`, `VALUE`, `METADATA`, `TIMESTAMP`) VALUES
+(4, 'com.nin9creative.magrocket', '123', 'api_interaction', 1, NULL, '2013-07-18 20:39:34'),
+(2, 'com.nin9creative.magrocket', '123', 'api_interaction', 1, NULL, '2013-07-18 20:29:29'),
+(3, 'com.nin9creative.magrocket', '123', 'api_interaction', 1, NULL, '2013-07-18 20:29:31');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

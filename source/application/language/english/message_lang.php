@@ -18,6 +18,15 @@ $lang['__BTN_EXPORT_CSV__'] = "Export CSV";
 
 $lang['__LBL_PROJECT_NAME__'] = "MagRocket Administration Console";
 $lang['__LBL_MAIN__'] = "Dashboard";
+$lang['__LBL_TOOLS__'] = "Tools";
+$lang['__LBL_PUBLICATION__'] = "Publication";
+$lang['__LBL_ISSUES__'] = "Issues";
+$lang['__LBL_PURCHASES__'] = "Purchases";
+$lang['__LBL_RECEIPTS__'] = "Receipts";
+$lang['__LBL_SUBSCRIPTIONS__'] = "Subscriptions";
+$lang['__LBL_APNS_TOKENS__'] = "APNS Tokens";
+$lang['__LBL_SYSTEM_LOG__'] = "System Log";
+$lang['__LBL_ANALYTICS__'] = "Analytics";
 $lang['__LBL_CONFIG__'] = "Configuration";
 $lang['__LBL_BROWSER__'] = "Data Browser";
 $lang['__LBL_PUBLICATION_MANANGER__'] = "Publication Management";
