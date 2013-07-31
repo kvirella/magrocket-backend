@@ -10,12 +10,12 @@
         <!-- <link href="<?php echo base_url(); ?>media/css/template.css" rel="stylesheet">-->
         
         
-        <link href="<?php echo base_url(); ?>media/bounce-theme/css/bootstrap.css" rel="stylesheet">
-		<link href="<?php echo base_url(); ?>media/bounce-theme/css/bootstrap-responsive.css" rel="stylesheet">
-		<link href="<?php echo base_url(); ?>media/bounce-theme/css/glyphicons.css" rel="stylesheet">
+        <link href="<?php echo base_url(); ?>media/magrocket-theme/css/bootstrap.css" rel="stylesheet">
+		<link href="<?php echo base_url(); ?>media/magrocket-theme/css/bootstrap-responsive.css" rel="stylesheet">
+		<link href="<?php echo base_url(); ?>media/magrocket-theme/css/glyphicons.css" rel="stylesheet">
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
-	    <link href="<?php echo base_url(); ?>media/bounce-theme/css/base.css" rel="stylesheet">
-		<link href="<?php echo base_url(); ?>media/bounce-theme/css/blue.css" rel="stylesheet">
+	    <link href="<?php echo base_url(); ?>media/magrocket-theme/css/base.css" rel="stylesheet">
+		<link href="<?php echo base_url(); ?>media/magrocket-theme/css/blue.css" rel="stylesheet">
         
         <link href="<?php echo base_url(); ?>media/jquery/ui/css/smoothness/jquery-ui-1.9.1.custom.min.css" rel="stylesheet">
         <link href="<?php echo base_url(); ?>media/css/style.css" rel="stylesheet">
